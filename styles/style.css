@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #333;
+  background: #fff;
   color: #fff;
   font-size: 1.8em;
   line-height: 1.5;
@@ -47,14 +47,14 @@ p {
 
 #showcase {
   min-height: 450px;
-  color: #fff;
+  color: #111111;
   text-align: center;
 }
 
 #showcase .bg-image {
   position: absolute;
-  background: #111
-    url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+  background: #fff
+    /* url("https://static.pexels.com/photos/248515/pexels-photo-248515.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
