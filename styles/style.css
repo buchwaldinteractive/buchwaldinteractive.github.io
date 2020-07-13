@@ -72,7 +72,20 @@ p {
 #showcase .content-wrap,
 #section-a .content-wrap {
   padding: 0 1.5em;
+  /* max-width: 200px; */
 }
+
+#showcase .btn-store{
+  padding: 0 7em;
+  width: 30%;
+}
+
+#showcase .btn-icon{
+  padding: 0 9em;
+  white-space: nowrap;
+
+}
+
 
 /* Section A */
 
@@ -86,6 +99,8 @@ p {
   margin: 0;
   padding: 0;
 }
+
+
 /* Section B */
 
 #section-b {
@@ -123,6 +138,11 @@ p {
   color: #fff;
 }
 
+#section-d a {
+  color: #fff;
+  text-decoration: none;
+}
+
 #section-d .box:first-child {
   background: #2690d4;
 }
@@ -149,19 +169,42 @@ p {
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
 
+  #showcase main
   #section-a .content-text {
     columns: 2;
     column-gap: 2em;
   }
 
+  #section-a .card-img{
+    display: flex;
+    justify-content: space-around;
+    grid-column: span 4;
+  }
+
+  .btn-store{
+    grid-column: span 4;        
+    max-width: 12em;
+    /* text-align: center; */
+    /* white-space: nowrap; */
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 20%; */
+  }
+    
+
   #section-a .content-text p {
     padding-top: 0;
   }
 
-  .content-wrap,
+  
+  .content-wrap{
+    grid-column: span 4;
+  }  
   #section-b ul {
     grid-column: 2/4;
   }
+  
 
   .box,
   #main-footer div {
