@@ -5,7 +5,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: #C4D3E5;
   color: #fff;
-  font-size: 1.5em;
+  font-size: 5vw;
   line-height: 1.5;
   text-align: center;
 }
@@ -167,6 +167,11 @@ p {
 /* Media Queries */
 
 @media (min-width: 700px) {
+
+  body{
+    font-size: 1vw;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
@@ -177,10 +182,13 @@ p {
     columns: 2;
     column-gap: 2em;
   }
-
-  #showcase .content-wrap {
+  #showcase .content-wrap{
+    /* Heading */
+    font-size: 4vw;
+  }
+  .content-wrap {
   padding: 0 0em;
-  font-size: 2em;
+  /* font-size: 2vw; */
   /* max-width: 200px; */
 }
 
@@ -211,7 +219,9 @@ p {
     grid-column: span 4;
   }  
   #section-b ul {
+    /* Card Überschriften */
     grid-column: 2/4;
+    font-size: 1.3vw;
   }
   
 
