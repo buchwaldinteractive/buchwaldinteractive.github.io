@@ -28,6 +28,13 @@ p {
   padding: 1em 0;
 }
 
+ul {
+  display: table;
+  text-align: left;
+}
+
+
+
 .btn {
   display: inline-block;
   background: #333;
@@ -175,6 +182,11 @@ p {
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+  ul {
+    margin-left: 30%;
+    margin-right: 30%;
+  
   }
 
   #showcase main
