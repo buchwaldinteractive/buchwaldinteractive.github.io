@@ -28,12 +28,6 @@ p {
   padding: 1em 0;
 }
 
-ul {
-  display: table;
-  text-align: left;
-}
-
-
 
 .btn {
   display: inline-block;
@@ -80,6 +74,10 @@ ul {
 #section-a .content-wrap {
   padding: 0 1.5em;
   /* max-width: 200px; */
+}
+
+#showcase .content-wrap {
+  font-size: 6vw;
 }
 
 .btn-store{
@@ -141,6 +139,11 @@ ul {
   padding: 2em;
 }
 
+#section-c ul {
+  display: table;
+  text-align: left;
+}
+
 /* Section D / Boxes */
 
 #section-d .box {
@@ -182,11 +185,6 @@ ul {
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-  }
-  ul {
-    margin-left: 30%;
-    margin-right: 30%;
-  
   }
 
   #showcase main
@@ -250,4 +248,11 @@ ul {
   #section-b li {
     width: 31%;
   }
+
+  #section-c ul {
+    margin-left: 30%;
+    margin-right: 30%;
+  
+  }
+
 }
