@@ -144,6 +144,19 @@ p {
   text-align: left;
 }
 
+#section-c .bg-image {
+  position: absolute;
+  background: #333
+    url("../../media/background.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  height: 450px;
+  z-index: 0;
+  opacity: 0.4;
+}
+
 /* Section D / Boxes */
 
 #section-d .box {
