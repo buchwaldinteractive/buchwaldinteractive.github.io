@@ -83,16 +83,22 @@ p {
 .btn-store{
   /* padding: 0 7em; */
   /* min-width: 4em; */
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 28%;
+  margin-right: 28%;
 }
 
 #showcase .btn-icon{
-  padding: 0 9em;
-  white-space: nowrap;
+  padding: 0 6em;
+  display: flex;
+  white-space: nowrap ;
   margin-left: auto;
   margin-right: auto;
 }
+
+#showcase .btn-social{
+  padding: 0 0.1em;
+}
+
 
 
 /* Section A */
@@ -230,6 +236,19 @@ p {
     margin-left: auto;
     margin-right: auto;
     /* width: 20%; */
+  }
+
+  #showcase .btn-icon{
+    grid-column: span 4;  
+    padding: 0 20em;
+    display: flex;
+    white-space: nowrap ;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #showcase .btn-social{
+    padding: 0 0.1em;
   }
     
 
