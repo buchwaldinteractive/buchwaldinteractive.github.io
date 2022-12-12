@@ -3,17 +3,17 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #C4D3E5;
+  background: #676767;
   color: #fff;
   font-size: 5vw;
   line-height: 1.5;
   text-align: center;
 }
 
-img {
+.logo {
+  width: 200px;
+  margin: auto;
   display: block;
-  width: 100%;
-  height: auto;
 }
 
 h1,
