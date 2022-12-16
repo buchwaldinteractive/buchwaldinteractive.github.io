@@ -432,9 +432,9 @@ button{
 }
 
 .about__img{
-  width: 200px;
+  width: 300px;
   justify-self: center;
-  animation: floating 2s ease-in-out infinite;
+  animation: floating 5s ease-in-out infinite;
 }
 
 /*=============== TRICK OR TREAT ===============*/
@@ -963,7 +963,7 @@ button{
     column-gap: 7rem;
   }
   .about__img{
-    width: 350px;
+    width: 500px;
   }
   .about__description{
     padding-right: 2rem;
