@@ -7,8 +7,8 @@
 
   /*========== Colors ==========*/
   --hue: 14;
-  --first-color: hsl(var(--hue), 91%, 54%);
-  --first-color-alt: hsl(var(--hue), 91%, 50%);
+  --first-color: hsl(var(--hue), 10%, 54%);
+  --first-color-alt: hsl(var(--hue), 20%, 50%);
   --title-color: hsl(var(--hue), 4%, 100%);
   --text-color: hsl(var(--hue), 4%, 85%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
@@ -27,7 +27,7 @@
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2rem;
+  --biggest-font-size: 3rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
@@ -361,7 +361,12 @@ button{
 
 .button:hover{
   background-color: var(--first-color-alt);
-  transform: scale(1.2);
+  transform: scale(1.1);
+}
+.button:disabled{
+  background-color: var(--first-color);
+  pointer-events: none;
+  cursor: default;
 }
 
 .button__icon{
