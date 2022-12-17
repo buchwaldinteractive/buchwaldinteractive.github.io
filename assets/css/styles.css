@@ -153,6 +153,17 @@ button{
   z-index: var(--z-fixed);
 }
 
+.teaser{
+  background-size: cover;
+  background-image: url('/media/images/teaser_background.jpg');
+  background-image: 
+    radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 75%, rgba(019 19, 19, 1) 100%),
+    linear-gradient(180deg, rgba(19, 19, 19, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(19, 19, 19, 1) 100%),
+    url('/media/images/teaser_background.jpg');
+  background-position-y: -150%;
+  text-shadow: 0 0 10px #131313;
+}
+
 /*=============== NAV ===============*/
 .nav{
   height: var(--header-height);
@@ -324,6 +335,7 @@ button{
 .home__buttons{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 /* Swiper Class */
@@ -727,15 +739,12 @@ button{
 /*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
-  background: var(--container-color);
-  right: 1rem;
-  bottom: -20%;
-  display: inline-flex;
-  padding: .3rem;
-  border-radius: .25rem;
+  right: 2rem;
+  bottom: 2rem;
   z-index: var(--z-tooltip);
-  opacity: .8;
-  transition: .4s;
+  width: 70px;
+  height: 70px;
+  transition: all 0.5s ease-in-out;
 }
 
 .scrollup__icon{
@@ -746,11 +755,6 @@ button{
 .scrollup:hover{
   background: var(--container-color);
   opacity: 1;
-}
-
-/* Show Scroll Up*/
-.show-scroll{
-  bottom: 3rem;
 }
 
 /*=============== SCROLL BAR ===============*/
