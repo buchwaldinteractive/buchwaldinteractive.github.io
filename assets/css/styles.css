@@ -154,13 +154,14 @@ button{
 }
 
 .teaser{
+  margin-top: 80px;
   background-size: cover;
-  background-image: url('/media/images/teaser_background.jpg');
+  background-image: url('../../media/images/teaser_background.jpg');
   background-image: 
     radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 75%, rgba(019 19, 19, 1) 100%),
     linear-gradient(180deg, rgba(19, 19, 19, 1) 0%, rgba(0, 0, 0, 0) 50%, rgba(19, 19, 19, 1) 100%),
-    url('/media/images/teaser_background.jpg');
-  background-position-y: -150%;
+    url('../../media/images/teaser_background.jpg');
+  background-position-y: 0%;
   text-shadow: 0 0 10px #131313;
 }
 
@@ -742,19 +743,9 @@ button{
   right: 2rem;
   bottom: 2rem;
   z-index: var(--z-tooltip);
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   transition: all 0.5s ease-in-out;
-}
-
-.scrollup__icon{
-  font-size: 1.25rem;
-  color: var(--title-color);
-}
-
-.scrollup:hover{
-  background: var(--container-color);
-  opacity: 1;
 }
 
 /*=============== SCROLL BAR ===============*/
