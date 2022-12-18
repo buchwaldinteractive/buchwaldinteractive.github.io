@@ -408,6 +408,22 @@ button{
   column-gap: .5rem;
 }
 
+.button--language{
+  position: absolute;
+  left: 50%;
+  bottom: 35%;
+  border: 2px solid;
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+  background-color: transparent;
+  border-radius: 3rem;
+  padding: .5rem 1rem;
+}
+
+.button--language:hover{
+  background: none;
+}
+
 /*=============== CATEGORY ===============*/
 .category__container{
   grid-template-columns: repeat(2, 1fr);
