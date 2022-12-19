@@ -517,6 +517,11 @@ button{
   animation: floating 5s ease-in-out infinite;
 }
 
+/*=============== IMPRESSUM ===============*/
+.impressum__text{
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin-left: var(--mb-2);
+}
 /*=============== TRICK OR TREAT ===============*/
 .trick__container{
   grid-template-columns: repeat(2, 1fr);
