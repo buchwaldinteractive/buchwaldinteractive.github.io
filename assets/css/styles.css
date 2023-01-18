@@ -207,10 +207,11 @@ button{
   margin-top: 80px;
   background-size: cover;
   background-image: 
-    radial-gradient(circle, transparent 75%, rgba(19, 19, 19, 1)),
-    linear-gradient(180deg, rgba(19, 19, 19, 1) 0%, transparent, rgba(19, 19, 19, 1) 100%),
+    radial-gradient(circle, transparent 90%, rgba(30, 30, 30, 1)),
+    linear-gradient(180deg, rgba(30, 30, 30, 1) 0%, transparent, rgba(30, 30, 30, 1) 100%),
     url('../../media/images/teaser_background.jpg');
-  background-position-y: 0%;
+  background-position-y: 50%;
+  background-position-x: 60%;
   text-shadow: 0 0 10px #131313;
 }
 
