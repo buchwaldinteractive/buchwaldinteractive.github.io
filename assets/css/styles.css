@@ -229,14 +229,17 @@ button{
 }
 
 .teaser::after {
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    display: block;
-    position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  position: absolute;
+  background-image:
+    radial-gradient(circle, transparent 90%, rgba(30, 30, 30, 1)),
+    linear-gradient(180deg, rgba(30, 30, 30, 1) 0%, transparent, rgba(30, 30, 30, 1) 100%);
 }
 
 .teaser iframe {
@@ -252,10 +255,10 @@ button{
 }
 
 @media screen and (max-width: 767px){
-    .teaser iframe {
-        display: none;
-        opacity: 0 !important;
-    }
+  .teaser iframe {
+    display: none;
+    opacity: 0 !important;
+  }
 }
 
 /*=============== NAV ===============*/

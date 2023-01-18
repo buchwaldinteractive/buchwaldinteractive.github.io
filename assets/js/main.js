@@ -117,6 +117,7 @@ function onYouTubeIframeAPIReady() {
       autohide: 0,
       enablejsapi: 1,
       modestbranding: 1,
+      playsinline: 1,
       vq: 'hd1080'
     },
     allowfullscreen: 0,
