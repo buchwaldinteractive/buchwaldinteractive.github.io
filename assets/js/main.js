@@ -114,12 +114,12 @@ function onYouTubeIframeAPIReady() {
       loop: 1,
       controls: 0,
       showinfo: 0,
-      autohide: 2,
+      autohide: 0,
       enablejsapi: 1,
       modestbranding: 1,
       vq: 'hd1080'
     },
-    allowfullscreen: 1,
+    allowfullscreen: 0,
 
     events: {
       'onStateChange': onPlayerStateChange
