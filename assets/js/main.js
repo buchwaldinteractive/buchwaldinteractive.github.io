@@ -96,3 +96,44 @@ sr.reveal(`.home-swiper, .new-swiper, .newsletter__container`)
 sr.reveal(`.category__data, .trick__content, .footer__content`,{interval: 100})
 sr.reveal(`.about__data, .discount__img`,{origin: 'left'})
 sr.reveal(`.about__img, .discount__data`,{origin: 'right'})
+
+// Youtube video abckground teaser
+let player;
+let hasChangedOpacity = false;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('teaser-video', {
+    height: '390',
+    width: '640',
+    videoId: 'qP-reIh7ysU',
+
+    playerVars: {
+      playlist: 'qP-reIh7ysU',
+      mute: 1,
+      autoplay: 1,
+      loop: 1,
+      controls: 0,
+      showinfo: 0,
+      autohide: 2,
+      enablejsapi: 1,
+      modestbranding: 1,
+      vq: 'hd1080'
+    },
+    allowfullscreen: 1,
+
+    events: {
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerStateChange(el) {
+  if (el.data === 1 && hasChangedOpacity === false) {
+    hasChangedOpacity = true;
+
+    setTimeout(function() {
+      document.getElementById('teaser-video').style.opacity = "1.0";
+      document.getElementById('teaser-video').parentElement.classList.add('teaser-loaded');
+    }, 500);
+  }
+}

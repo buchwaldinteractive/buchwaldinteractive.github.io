@@ -213,6 +213,25 @@ button{
   background-position-y: 50%;
   background-position-x: 60%;
   text-shadow: 0 0 10px #131313;
+  position: relative;
+  overflow: hidden;
+}
+
+.teaser section {
+  z-index: 1;
+  position: relative;
+}
+
+.teaser iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out;
 }
 
 /*=============== NAV ===============*/
