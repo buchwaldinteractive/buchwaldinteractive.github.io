@@ -215,11 +215,28 @@ button{
   text-shadow: 0 0 10px #131313;
   position: relative;
   overflow: hidden;
+  width: 100vw;
+}
+
+.teaser.teaser-loaded {
+  color: white;
+  pointer-events: none;
 }
 
 .teaser section {
-  z-index: 1;
+  z-index: 2;
   position: relative;
+}
+
+.teaser::after {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    position: absolute;
 }
 
 .teaser iframe {
@@ -227,11 +244,18 @@ button{
   top: 50%;
   left: 50%;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vw/1.77);
   transform: translate(-50%, -50%);
   z-index: 0;
   opacity: 0;
   transition: opacity 250ms ease-in-out;
+}
+
+@media screen and (max-width: 767px){
+    .teaser iframe {
+        display: none;
+        opacity: 0 !important;
+    }
 }
 
 /*=============== NAV ===============*/
