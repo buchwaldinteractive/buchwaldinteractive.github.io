@@ -218,11 +218,6 @@ button{
   width: 100vw;
 }
 
-.teaser.teaser-loaded {
-  color: white;
-  pointer-events: none;
-}
-
 .teaser section {
   z-index: 2;
   position: relative;
