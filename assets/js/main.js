@@ -30,6 +30,7 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== HOME SWIPER ===============*/
+/*
 let homeSwiper = new Swiper(".home-swiper", {
     spaceBetween: 30,
     loop: 'true',
@@ -39,6 +40,7 @@ let homeSwiper = new Swiper(".home-swiper", {
         clickable: true,
       },
 })
+*/
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader(){
@@ -49,12 +51,14 @@ function scrollHeader(){
 window.addEventListener('scroll', scrollHeader)
 
 /*=============== NEW SWIPER ===============*/
+/*
 let newSwiper = new Swiper(".new-swiper", {
     centeredSlides: true,
     slidesPerView: "auto",
     loop: 'true',
     spaceBetween: 16,
 });
+*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
@@ -94,8 +98,9 @@ const sr = ScrollReveal({
 
 sr.reveal(`.home-swiper, .new-swiper, .newsletter__container`)
 sr.reveal(`.category__data, .trick__content, .footer__content`,{interval: 100})
-sr.reveal(`.about__data, .discount__img`,{origin: 'left'})
-sr.reveal(`.about__img, .discount__data`,{origin: 'right'})
+sr.reveal(`.about__data`,{origin: 'left'})
+sr.reveal(`.about__img`,{origin: 'right'})
+sr.reveal(`.faq__data`,{origin: 'left'})
 
 // Youtube video abckground teaser
 let player;

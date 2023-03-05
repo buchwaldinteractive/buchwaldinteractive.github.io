@@ -132,8 +132,7 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  /* background: var(--body-color); */
-  background: radial-gradient(#242424,20%, #131313);
+  background: var(--body-color);
   color: var(--text-color);
 }
 
@@ -169,7 +168,17 @@ button{
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
-  padding: 4.5rem 0 2rem;
+  padding: 4.5rem 0 4.5rem;
+  background:
+    radial-gradient(at top, rgba(30, 30, 30, 1), transparent),
+    linear-gradient(to top, rgba(30, 30, 30, 1), transparent);
+}
+
+.section_special{
+  background:
+      radial-gradient(at top, rgba(30, 30, 30, 1), transparent),
+      linear-gradient(to top, rgba(30, 30, 30, 1), transparent),
+      url(../../media/images/wheel.png) no-repeat -150px -150px;
 }
 
 .section__title{
@@ -500,9 +509,6 @@ button{
 }
 
 .button--language{
-  position: absolute;
-  left: 48.5%;
-  bottom: 35%;
   border: 2px solid;
   font-size: var(--smaller-font-size);
   color: var(--title-color);
@@ -556,6 +562,32 @@ button{
   width: 300px;
   justify-self: center;
   animation: floating 5s ease-in-out infinite;
+}
+
+/*=============== FAQ ===============*/
+
+#faq h2 {
+  margin-top: 1.5rem;
+  font-size: var(--h1-font-size);
+}
+
+#faq h3{
+  margin-top: 2.5rem;
+}
+
+#faq h4 {
+  margin-top: 1.5rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+  background-image: url('../../media/images/arrow.png');
+  background-repeat: no-repeat;
+  background-size: 1.5em;
+}
+
+#faq p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
 }
 
 /*=============== IMPRESSUM ===============*/
@@ -754,8 +786,7 @@ button{
 
 /*=============== FOOTER ===============*/
 .footer{
-  position: relative;
-  overflow: hidden;
+  text-align: center;
 }
 
 .footer__img-one,
@@ -846,7 +877,7 @@ button{
   display: block;
   text-align: center;
   font-size: var(--smaller-font-size);
-  margin-top: 4.5rem;
+  margin-top: 2rem;
 }
 
 .footer__impressum{
@@ -935,7 +966,7 @@ button{
   }
 
   .section{
-    padding: 7rem 0 2rem;
+    padding: 7rem 0 7rem;
   }
 
   .nav{
@@ -1118,7 +1149,6 @@ button{
   }
 
   .footer__copy{
-    margin-top: 6rem;
     text-align: center;
   }
 }

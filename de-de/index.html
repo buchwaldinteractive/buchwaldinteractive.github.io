@@ -34,6 +34,10 @@
                         <a href="#about" class="nav__link">Info</a>
                     </li>
 
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">FAQ</a>
+                    </li>
+
                     <a href="mailto:contact@the-first-explorers.com" class="button button--ghost">Kontakt</a>
                 </ul>
 
@@ -103,11 +107,233 @@
                 <img src="../media/images/DieErstenEntdecker_Logo_masked.png" alt="Die Ersten Entdecker Logo" class="about__img">
             </div>
         </section>
-    </main>
+
+        <!--==================== FAQ ====================-->
+        
+        <section class="section section_special" id="faq">
+            <div class="container faq__data" x-data="{ openPanel: null }">
+        
+                <h2>FAQ</h2>
+        
+                <h3>Spiel & Lore</h3>
+        
+                <h4 @click="openPanel == 'world_setting' ? openPanel = null : openPanel = 'world_setting'">
+                    In was für einer Welt spielt “Die Ersten Entdecker”?
+                </h4>
+        
+                <p x-show="openPanel == 'world_setting'" x-transition:enter.duration.1500ms.origin.left>Das Spiel ist in der Zeit der Antike in Europa angesiedelt. Die Antike und Spätantike dienen als Vorlage für die Fraktionen, die Spielwelt, Artstyle und Waren. Historische Genauigkeit ist allerdings kein Schwerpunkt des Spiels.</p>
+        
+                <h4 @click="openPanel == 'special' ? openPanel = null : openPanel = 'special'">
+                    Was ist das Besondere an “Die Ersten Entdecker”?
+                </h4>
+        
+                <p x-show="openPanel == 'special'" x-transition:enter.duration.1500ms.origin.left>Du erlebst ein atmosphärisches, siedlerähnliches Spiel, das die perfekte Mischung zwischen Aufbau- und Echtzeitstrategie
+                bietet.
+                Freue dich auf eine wuselige Welt mit Aquarium-Effekt, d.h. jede Ware und jeder Einwohner wird grafisch dargestellt und
+                du kannst jeden Produktionsschritt verfolgen. Nur durch das Beobachten der Spielwelt wirst du erkennen können, wo deine
+                Geschicke benötigt werden.
+</p>
+        
+                <h4 @click="openPanel == 'fantasy' ? openPanel = null : openPanel = 'fantasy'">
+                    Wird es Fantasy-Elemente geben?
+                </h4>
+        
+                <p x-show="openPanel == 'fantasy'" x-transition:enter.duration.1500ms.origin.left>Nein, Fantasy-Elemente sind nicht vorgesehen. Es wird keine Fantasy-Völker, Zauberer, Werwölfe oder Ähnliches geben.</p>
+        
+                <h4 @click="openPanel == 'factions' ? openPanel = null : openPanel = 'factions'">
+                    Gibt es unterschiedliche Fraktionen?
+                </h4>
+        
+                <p x-show="openPanel == 'factions'" x-transition:enter.duration.1500ms.origin.left>Aktuell liegt der Entwicklungsschwerpunkt auf einer Fraktion. Die Lore sieht aber definitiv mehrere Fraktionen vor. Wie
+                viele es in das Spiel schaffen, hängt vom weiteren Entwicklungsfortschritt ab.</p>
+        
+                <h3>Spielablauf</h3>
+        
+                <h4 @click="openPanel == 'objective' ? openPanel = null : openPanel = 'objective'">
+                    Was ist das Ziel im Spiel?
+                </h4>
+        
+                <p x-show="openPanel == 'objective'" x-transition:enter.duration.1500ms.origin.left>Du landest mit deinem Schiff an einer Insel an und musst eine florierende Siedlung aus dem Nichts mit den vorhandenen
+                Ressourcen der Karte erbauen. Um deine Partie erfolgreich abzuschließen, musst du alle Gegner auf der Map besiegen.</p>
+        
+                <h4 @click="openPanel == 'victory_condition' ? openPanel = null : openPanel = 'victory_condition'">
+                    Welche Siegbedingungen wird es geben?
+                </h4>
+        
+                <p x-show="openPanel == 'victory_condition'" x-transition:enter.duration.1500ms.origin.left>Der Sieg durch den militärischen Erfolg ist fest eingeplant. Allerdings soll es auch weitere Siegvarianten geben, welche
+                von der Karte bzw. Spielmodus abhängen. Freunde von friedlichen Siegen sollen nicht zu kurz kommen. Es gibt Pläne für
+                den Sieg durch wirtschaftlichen Erfolg oder durch das Errichten besonderer Bauprojekte.</p>
+        
+                <h4 @click="openPanel == 'game_duration.in' ? openPanel = null : openPanel = 'game_duration.in'">
+                    Wie lange wird eine Partie gehen?
+                </h4>
+        
+                <p x-show="openPanel == 'game_duration.in'" x-transition:enter.duration.1500ms.origin.left>Eine Partie kann zwischen 1,5 Stunden und 4-5 Stunden dauern und hängt von der Spielweise der Spieler ab. Die
+                Spielmechaniken bieten hier viel Flexibilität.</p>
+        
+                <h4 @click="openPanel == 'game_modes' ? openPanel = null : openPanel = 'game_modes'">
+                    Welche Spielmodi sind geplant?
+                </h4>
+        
+                <p x-show="openPanel == 'game_modes'" x-transition:enter.duration.1500ms.origin.left>Aktuell liegt der Fokus auf Gefechtskarten gegen die KI und menschlichen Gegnern, also PvE und PvP. Eine Storykampagne
+                soll es ebenfalls geben, hängt aber auch etwas vom Entwicklungsverlauf ab.</p>
+        
+                <h3>Gameplay</h3>
+        
+                <h4 @click="openPanel == 'building' ? openPanel = null : openPanel = 'building'">
+                    Wie wird das Bauen funktionieren?
+                </h4>
+        
+                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Gebäude und Straßen werden auf einem granularen Hex-Grid innerhalb deines Territoriums platziert werden können.
+                Das granulare Grid hat die perfekte Größe, um den Puzzle Drang in dir zu wecken, macht aber trotzdem das Bauen einer
+                organischen Siedlung möglich.
+</p>
+                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Du wirst dich dabei erwischen, wie du versuchst, noch den letzten Freiraum in deiner Siedlung herauszuholen!
+                Es wird außerdem auch hügeliges Terrain geben, welches die Bauzeit deiner Gebäude verlängert, weshalb der richtig
+                ausgewählte Bauplatz goldwert ist.
+</p>
+        
+                <h4 @click="openPanel == 'civilian' ? openPanel = null : openPanel = 'civilian'">
+                    Können zivile Gebäude oder zivile Siedler angegriffen werden?
+                </h4>
+        
+                <p x-show="openPanel == 'civilian'" x-transition:enter.duration.1500ms.origin.left>Nein, zivile Gebäude oder zivile Siedler können von keiner Einheit angegriffen werden. Nur Militärgebäude wie Wachtürme
+                können eingenommen werden.</p>
+        
+                <h4 @click="openPanel == 'civilian_flee' ? openPanel = null : openPanel = 'civilian_flee'">
+                    Fliehen zivile Siedler vor feindlichen Einheiten?
+                </h4>
+        
+                <p x-show="openPanel == 'civilian_flee'" x-transition:enter.duration.1500ms.origin.left>Nein, zivile Siedler werden weiter Waren transportieren und nicht fliehen.</p>
+        
+                <h4 @click="openPanel == 'direct_unit_control' ? openPanel = null : openPanel = 'direct_unit_control'">
+                    Gibt es eine direkte Einheitensteuerung?
+                </h4>
+        
+                <p x-show="openPanel == 'direct_unit_control'" x-transition:enter.duration.1500ms.origin.left>Die zivilen Bewohner wie Träger oder Bauarbeiter werden indirekt durch deine Bauaufträge und Produktionsaufgaben
+                gesteuert.</p>
+                <p x-show="openPanel == 'direct_unit_control'" x-transition:enter.duration.1500ms.origin.left>Soldaten, Geologen, usw. werden direkt gesteuert. Freue dich darauf, riesige Armeen auszuheben und im Kampf zu
+                befehligen!
+
+                </p>
+        
+                <h4 @click="openPanel == 'territory_expansion' ? openPanel = null : openPanel = 'territory_expansion'">
+                    Wie erweitere ich mein Territorium?
+                </h4>
+        
+                <p x-show="openPanel == 'territory_expansion'" x-transition:enter.duration.1500ms.origin.left>Das Territorium wird mit Grenzsteinen abgegrenzt. Die Grenze kann durch das Setzen von Militär Gebäuden wie Wachtürmen
+                erweitert werden.</p>
+        
+                <h4 @click="openPanel == 'settlement_upgrades' ? openPanel = null : openPanel = 'settlement_upgrades'">
+                    Wird es Siedlungsaufstiege geben?
+                </h4>
+        
+                <p x-show="openPanel == 'settlement_upgrades'" x-transition:enter.duration.1500ms.origin.left>Ja, durch den Bau spezieller Wahrzeichen wird die Siedlung aufsteigen und neue Gebäude und Einheiten in einer Partie
+                freischalten. Die Siedlung startet in der Weiler-Stufe. Aktuell sind 4 Siedlungsstufen geplant: die Weiler-, Dorf-,
+                Kleinstadt- und Stadt-Stufe.</p>
+        
+                <h4 @click="openPanel == 'mines' ? openPanel = null : openPanel = 'mines'">
+                    Wird es Minen und Bergbau geben?
+                </h4>
+        
+                <p x-show="openPanel == 'mines'" x-transition:enter.duration.1500ms.origin.left>Ja, es wird richtige Berge geben, auf denen man Minen bauen kann.</p>
+        
+                <h4 @click="openPanel == 'food_system' ? openPanel = null : openPanel = 'food_system'">
+                    Wie funktioniert das Nahrungssystem?
+                </h4>
+        
+                <p x-show="openPanel == 'food_system'" x-transition:enter.duration.1500ms.origin.left>Minenarbeiter arbeiten nur, wenn sie ihre Grundnahrungsmittel bekommen.</p>
+                <p x-show="openPanel == 'food_system'" x-transition:enter.duration.1500ms.origin.left>
+                Produktionsgebäude arbeiten grundsätzlich ohne Mahlzeiten. Allerdings kann die Produktionseffizienz mit Mahlzeiten
+                massiv gesteigert werden.
+                Mahlzeiten werden in Wohnhäusern von Köchen zubereitet. Die Köche besorgen sich die Nahrungsmittel an Marktständen. Je
+                höher die Siedlungsstufe, desto höherwertige Mahlzeiten sind möglich.
+</p>
+        
+                <h4 @click="openPanel == 'inhabitant_recrution' ? openPanel = null : openPanel = 'inhabitant_recrution'">
+                    Wie bekommt man neue Einwohner?
+                </h4>
+        
+                <p x-show="openPanel == 'inhabitant_recrution'" x-transition:enter.duration.1500ms.origin.left>Aktuell ist geplant, dass man diese über einen Hafen anwerben kann. Die Einwohner kommen dann per Schiff aus dem
+                Heimatland.</p>
+        
+                <h4 @click="openPanel == 'walls' ? openPanel = null : openPanel = 'walls'">
+                    Wird es Mauern geben?
+                </h4>
+        
+                <p x-show="openPanel == 'walls'" x-transition:enter.duration.1500ms.origin.left>Ja, Holzpalisaden und Steinmauern sind geplant.</p>
+        
+                <h4 @click="openPanel == 'soldiers_on_towers' ? openPanel = null : openPanel = 'soldiers_on_towers'">
+                    Können Soldaten auf Türme und Steinmauern positioniert werden?
+                </h4>
+        
+                <p x-show="openPanel == 'soldiers_on_towers'" x-transition:enter.duration.1500ms.origin.left>Auf jeden Fall.</p>
+        
+                <h4 @click="openPanel == 'combat_power' ? openPanel = null : openPanel = 'combat_power'">
+                    Wird es ein Kampfkraftsystem geben?
+                </h4>
+        
+                <p x-show="openPanel == 'combat_power'" x-transition:enter.duration.1500ms.origin.left>Definitiv, gerade zu Beginn einer Partie werden die Soldaten auf ihrem Heimat Territorium einen massiven Kampfkraftbonus
+                gegenüber Gegner haben. Das verhindert Rush-Taktiken effektiv. Im Verlauf einer Partie wird man Einfluss auf die
+                Kampfkraft nehmen können.</p>
+        
+                <h3>Community</h3>
+        
+                <h4 @click="openPanel == 'mod_support' ? openPanel = null : openPanel = 'mod_support'">
+                    Ist Modsupport geplant?
+                </h4>
+        
+                <p x-show="openPanel == 'mod_support'" x-transition:enter.duration.1500ms.origin.left>Ja!</p>
+                <p x-show="openPanel == 'mod_support'" x-transition:enter.duration.1500ms.origin.left>Modsupport ist geplant.</p>
+                <p x-show="openPanel == 'mod_support'" x-transition:enter.duration.1500ms.origin.left>Wie umfangreich dieser ausfallen wird, wird in der weiteren Entwicklung entschieden. Mods sollen direkt im Spiel als
+                Plugins gesucht, installiert und aktiviert werden können. Selbst erstellte Karten sollen möglich sein.</p>
+        
+                <h4 @click="openPanel == 'community_interaction' ? openPanel = null : openPanel = 'community_interaction'">
+                    Gibt es eine Interaktion mit der Community?
+                </h4>
+        
+                <p x-show="openPanel == 'community_interaction'" x-transition:enter.duration.1500ms.origin.left>Auf jeden Fall. Der Entwickler freut sich über einen regen Austausch auf dem offiziellen Discord Server.
+                Dort werden auch in regelmäßigen Abständen Entwicklungsfortschritte mit der Community geteilt und diskutiert.
+                Ich freue mich auf deine Ideen und Feedback!
+</p>
+        
+                <h3>Technik</h3>
+        
+                <h4 @click="openPanel == 'engine' ? openPanel = null : openPanel = 'engine'">
+                    Mit welcher Engine wird das Spiel entwickelt?
+                </h4>
+        
+                <p x-show="openPanel == 'engine'" x-transition:enter.duration.1500ms.origin.left>Für die Entwicklung wird die <strong>Unreal Engine 5</strong> verwendet.</p>
+        
+                <h4 @click="openPanel == 'procedural_maps' ? openPanel = null : openPanel = 'procedural_maps'">
+                    Wird es handgefertigte oder prozedurale Karten geben?
+                </h4>
+        
+                <p x-show="openPanel == 'procedural_maps'" x-transition:enter.duration.1500ms.origin.left>Aktuell liegt der Fokus erstmal auf dem Erstellen handgefertigter Karten. Allerdings wird seit Beginn der Entwicklung
+                darauf geachtet, dass das Nutzen prozeduraler Elemente für später möglich ist. Prozedurale Karten sind also definitiv im
+                Bereich des Möglichen.</p>
+        
+                <h4 @click="openPanel == 'who' ? openPanel = null : openPanel = 'who'">
+                    Wer steckt hinter “Die Ersten Entdecker”?
+                </h4>
+        
+                <p x-show="openPanel == 'who'" x-transition:enter.duration.1500ms.origin.left>Das Projekt ist ein Ein-Mann-Projekt von Buchwald.Interactive. Hinter dem Nickname steckt Sebastian, der in Deutschland
+                lebt und das Projekt in seiner Freizeit entwickelt.</p>
+        
+                <h4 @click="openPanel == 'platforms' ? openPanel = null : openPanel = 'platforms'">
+                    Für welche Plattformen soll das Spiel erscheinen?
+                </h4>
+        
+                <p x-show="openPanel == 'platforms'" x-transition:enter.duration.1500ms.origin.left>Aktuell ist ein Release für Windows geplant. Weitere Plattformen können im Verlauf der Entwicklung dazukommen.</p>
+        
+            </div>
+        </section>
+        
+        </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
-        <a href="https://the-first-explorers.com/" class="button button--language">EN</a>
+        <a href="/" class="button button--language">EN</a>
         <span class="footer__copy">&#169; Buchwald Interactive. Alle Rechte vorbehalten.</span>
         <a href="../de-de/impressum/impressum.html" class="footer__impressum">Impressum</a>
     </footer>
@@ -117,11 +343,14 @@
         <img src="../media/images/wheel.png">
     </a>
 
+    <!--=============== ALPINE JS ===============-->
+    <script defer src="../assets/js/alpine.js"></script>
+
     <!--=============== SCROLL REVEAL ===============-->
     <script src="../assets/js/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <!-- <script src="../assets/js/swiper-bundle.min.js"></script> -->
 
     <!--=============== MAIN JS ===============-->
     <script src="../assets/js/main.js"></script>
