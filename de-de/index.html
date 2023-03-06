@@ -297,8 +297,22 @@
                 Ich freue mich auf deine Ideen und Feedback!
 </p>
         
-                <h3>Technik</h3>
-        
+                <h3>Hinter den Kulissen</h3>
+
+                <h4 @click="openPanel == 'stage_of_development' ? openPanel = null : openPanel = 'stage_of_development'">
+                    In welcher Entwicklungsphase befindet sich das Spiel aktuell?
+                </h4>
+
+                <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Aktuell befindet sich die Entwicklung in der Prototypenphase. Die Spielmechaniken werden von Grund auf getestet und iteriert.</p>
+                <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Sobald die Prototypenphase erfolgreich abgeschlossen ist, wird eine Steamseite für das Spiel erstellt und es geht in die nächste Entwicklungsphase.</p>
+
+                <h4 @click="openPanel == 'roadmap' ? openPanel = null : openPanel = 'roadmap'">
+                    Gibt es eine Art Roadmap?
+                </h4>
+
+                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Ja, für die aktuelle Entwicklungsphase gibt es <strong><a href="https://trello.com/b/YmKKXdrP/the-first-explorers-barebone-prototype-build-roadmap">hier </a></strong> einen Plan.</p>
+                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Dieser dient aber nur als Orientierung für die Community und ist nicht so detailliert wie der interne Plan.</p>
+
                 <h4 @click="openPanel == 'engine' ? openPanel = null : openPanel = 'engine'">
                     Mit welcher Engine wird das Spiel entwickelt?
                 </h4>

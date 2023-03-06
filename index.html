@@ -285,7 +285,21 @@
                 There, development progress will be shared and discussed with the community at regular inlefttervals.
                 I'm looking forward to your ideas and feedback!</p>
                 
-                <h3>Technology</h3>
+                <h3>Behind The Scenes</h3>
+
+                <h4 @click="openPanel == 'stage_of_development' ? openPanel = null : openPanel = 'stage_of_development'">
+                    What stage of development is the game currently in?
+                </h4>
+
+                <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Currently, the development is in the prototype phase. The game mechanics are being tested and iterated.</p>
+                <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Once the prototype phase is successfully completed, a Steam page will be created for the game and it will move to the next development phase.</p>
+
+                <h4 @click="openPanel == 'roadmap' ? openPanel = null : openPanel = 'roadmap'">
+                    Is there some kind of roadmap?
+                </h4>
+
+                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Yes, there is a plan <strong><a href="https://trello.com/b/YmKKXdrP/the-first-explorers-barebone-prototype-build-roadmap">here </a></strong> for the current development phase.</p>
+                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>However, this only serves as an orientation for the community and is not as detailed as the internal plan.</p>
 
                 <h4 @click="openPanel == 'engine' ? openPanel = null : openPanel = 'engine'">
                     Which engine is used to develop the game?
