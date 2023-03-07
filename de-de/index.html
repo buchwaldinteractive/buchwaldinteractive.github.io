@@ -40,7 +40,7 @@
 
                     <a href="mailto:contact@the-first-explorers.com" class="button button--ghost">Kontakt</a>
 
-                    <a href="/" class="button button--language">EN</a>
+                    <a href="../" class="button button--language">EN</a>
                 </ul>
 
                 <div class="nav__close" id="nav-close">
@@ -120,14 +120,14 @@
                 <h3>Spiel & Lore</h3>
         
                 <h4 @click="openPanel == 'world_setting' ? openPanel = null : openPanel = 'world_setting'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'world_setting' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'world_setting' }">
                     In was für einer Welt spielt “Die Ersten Entdecker”?
                 </h4>
         
                 <p x-show="openPanel == 'world_setting'" x-transition:enter.duration.1500ms.origin.left>Das Spiel ist in der Zeit der Antike in Europa angesiedelt. Die Antike und Spätantike dienen als Vorlage für die Fraktionen, die Spielwelt, Artstyle und Waren. Historische Genauigkeit ist allerdings kein Schwerpunkt des Spiels.</p>
         
                 <h4 @click="openPanel == 'special' ? openPanel = null : openPanel = 'special'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'special' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'special' }">
                     Was ist das Besondere an “Die Ersten Entdecker”?
                 </h4>
         
@@ -139,14 +139,14 @@
                 </p>
         
                 <h4 @click="openPanel == 'fantasy' ? openPanel = null : openPanel = 'fantasy'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'fantasy' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'fantasy' }">
                     Wird es Fantasy-Elemente geben?
                 </h4>
         
                 <p x-show="openPanel == 'fantasy'" x-transition:enter.duration.1500ms.origin.left>Nein, Fantasy-Elemente sind nicht vorgesehen. Es wird keine Fantasy-Völker, Zauberer, Werwölfe oder Ähnliches geben.</p>
         
                 <h4 @click="openPanel == 'factions' ? openPanel = null : openPanel = 'factions'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'factions' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'factions' }">
                     Gibt es unterschiedliche Fraktionen?
                 </h4>
         
@@ -156,7 +156,7 @@
                 <h3>Spielablauf</h3>
         
                 <h4 @click="openPanel == 'objective' ? openPanel = null : openPanel = 'objective'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'objective' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'objective' }">
                     Was ist das Ziel im Spiel?
                 </h4>
         
@@ -164,7 +164,7 @@
                 Ressourcen der Karte erbauen. Um deine Partie erfolgreich abzuschließen, musst du alle Gegner auf der Map besiegen.</p>
         
                 <h4 @click="openPanel == 'victory_condition' ? openPanel = null : openPanel = 'victory_condition'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'victory_condition' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'victory_condition' }">
                     Welche Siegbedingungen wird es geben?
                 </h4>
         
@@ -173,7 +173,7 @@
                 den Sieg durch wirtschaftlichen Erfolg oder durch das Errichten besonderer Bauprojekte.</p>
         
                 <h4 @click="openPanel == 'game_duration' ? openPanel = null : openPanel = 'game_duration'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'game_duration' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'game_duration' }">
                     Wie lange wird eine Partie gehen?
                 </h4>
         
@@ -181,7 +181,7 @@
                 Spielmechaniken bieten hier viel Flexibilität.</p>
         
                 <h4 @click="openPanel == 'game_modes' ? openPanel = null : openPanel = 'game_modes'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'game_modes' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'game_modes' }">
                     Welche Spielmodi sind geplant?
                 </h4>
         
@@ -191,7 +191,7 @@
                 <h3>Gameplay</h3>
         
                 <h4 @click="openPanel == 'building' ? openPanel = null : openPanel = 'building'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'building' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'building' }">
                     Wie wird das Bauen funktionieren?
                 </h4>
         
@@ -205,7 +205,7 @@
                 </p>
         
                 <h4 @click="openPanel == 'civilian' ? openPanel = null : openPanel = 'civilian'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'civilian' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'civilian' }">
                     Können zivile Gebäude oder zivile Siedler angegriffen werden?
                 </h4>
         
@@ -213,14 +213,14 @@
                 können eingenommen werden.</p>
         
                 <h4 @click="openPanel == 'civilian_flee' ? openPanel = null : openPanel = 'civilian_flee'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'civilian_flee' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'civilian_flee' }">
                     Fliehen zivile Siedler vor feindlichen Einheiten?
                 </h4>
         
                 <p x-show="openPanel == 'civilian_flee'" x-transition:enter.duration.1500ms.origin.left>Nein, zivile Siedler werden weiter Waren transportieren und nicht fliehen.</p>
         
                 <h4 @click="openPanel == 'direct_unit_control' ? openPanel = null : openPanel = 'direct_unit_control'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'direct_unit_control' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'direct_unit_control' }">
                     Gibt es eine direkte Einheitensteuerung?
                 </h4>
         
@@ -232,7 +232,7 @@
                 </p>
         
                 <h4 @click="openPanel == 'territory_expansion' ? openPanel = null : openPanel = 'territory_expansion'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'territory_expansion' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'territory_expansion' }">
                     Wie erweitere ich mein Territorium?
                 </h4>
         
@@ -240,7 +240,7 @@
                 erweitert werden.</p>
         
                 <h4 @click="openPanel == 'settlement_upgrades' ? openPanel = null : openPanel = 'settlement_upgrades'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'settlement_upgrades' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'settlement_upgrades' }">
                     Wird es Siedlungsaufstiege geben?
                 </h4>
         
@@ -249,14 +249,14 @@
                 Kleinstadt- und Stadt-Stufe.</p>
         
                 <h4 @click="openPanel == 'mines' ? openPanel = null : openPanel = 'mines'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'mines' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'mines' }">
                     Wird es Minen und Bergbau geben?
                 </h4>
         
                 <p x-show="openPanel == 'mines'" x-transition:enter.duration.1500ms.origin.left>Ja, es wird richtige Berge geben, auf denen man Minen bauen kann.</p>
         
                 <h4 @click="openPanel == 'food_system' ? openPanel = null : openPanel = 'food_system'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'food_system' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'food_system' }">
                     Wie funktioniert das Nahrungssystem?
                 </h4>
         
@@ -269,7 +269,7 @@
                 </p>
         
                 <h4 @click="openPanel == 'inhabitant_recrution' ? openPanel = null : openPanel = 'inhabitant_recrution'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'inhabitant_recrution' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'inhabitant_recrution' }">
                     Wie bekommt man neue Einwohner?
                 </h4>
         
@@ -277,21 +277,21 @@
                 Heimatland.</p>
         
                 <h4 @click="openPanel == 'walls' ? openPanel = null : openPanel = 'walls'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'walls' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'walls' }">
                     Wird es Mauern geben?
                 </h4>
         
                 <p x-show="openPanel == 'walls'" x-transition:enter.duration.1500ms.origin.left>Ja, Holzpalisaden und Steinmauern sind geplant.</p>
         
                 <h4 @click="openPanel == 'soldiers_on_towers' ? openPanel = null : openPanel = 'soldiers_on_towers'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'soldiers_on_towers' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'soldiers_on_towers' }">
                     Können Soldaten auf Türme und Steinmauern positioniert werden?
                 </h4>
         
                 <p x-show="openPanel == 'soldiers_on_towers'" x-transition:enter.duration.1500ms.origin.left>Auf jeden Fall.</p>
         
                 <h4 @click="openPanel == 'combat_power' ? openPanel = null : openPanel = 'combat_power'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'combat_power' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'combat_power' }">
                     Wird es ein Kampfkraftsystem geben?
                 </h4>
         
@@ -302,7 +302,7 @@
                 <h3>Community</h3>
         
                 <h4 @click="openPanel == 'mod_support' ? openPanel = null : openPanel = 'mod_support'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'mod_support' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'mod_support' }">
                     Ist Modsupport geplant?
                 </h4>
         
@@ -312,7 +312,7 @@
                 Plugins gesucht, installiert und aktiviert werden können. Selbst erstellte Karten sollen möglich sein.</p>
         
                 <h4 @click="openPanel == 'community_interaction' ? openPanel = null : openPanel = 'community_interaction'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'community_interaction' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'community_interaction' }">
                     Gibt es eine Interaktion mit der Community?
                 </h4>
         
@@ -324,7 +324,7 @@
                 <h3>Hinter den Kulissen</h3>
 
                 <h4 @click="openPanel == 'stage_of_development' ? openPanel = null : openPanel = 'stage_of_development'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'stage_of_development' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'stage_of_development' }">
                     In welcher Entwicklungsphase befindet sich das Spiel aktuell?
                 </h4>
 
@@ -332,7 +332,7 @@
                 <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Sobald die Prototypenphase erfolgreich abgeschlossen ist, wird eine Steamseite für das Spiel erstellt und es geht in die nächste Entwicklungsphase.</p>
 
                 <h4 @click="openPanel == 'roadmap' ? openPanel = null : openPanel = 'roadmap'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'roadmap' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'roadmap' }">
                     Gibt es eine Art Roadmap?
                 </h4>
 
@@ -340,14 +340,14 @@
                 <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Dieser dient aber nur als Orientierung für die Community und ist nicht so detailliert wie der interne Plan.</p>
 
                 <h4 @click="openPanel == 'engine' ? openPanel = null : openPanel = 'engine'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'engine' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'engine' }">
                     Mit welcher Engine wird das Spiel entwickelt?
                 </h4>
         
                 <p x-show="openPanel == 'engine'" x-transition:enter.duration.1500ms.origin.left>Für die Entwicklung wird die <strong>Unreal Engine 5</strong> verwendet.</p>
         
                 <h4 @click="openPanel == 'procedural_maps' ? openPanel = null : openPanel = 'procedural_maps'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'procedural_maps' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'procedural_maps' }">
                     Wird es handgefertigte oder prozedurale Karten geben?
                 </h4>
         
@@ -356,7 +356,7 @@
                 Bereich des Möglichen.</p>
         
                 <h4 @click="openPanel == 'who' ? openPanel = null : openPanel = 'who'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'who' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'who' }">
                     Wer steckt hinter “Die Ersten Entdecker”?
                 </h4>
         
@@ -364,7 +364,7 @@
                 lebt und das Projekt in seiner Freizeit entwickelt.</p>
         
                 <h4 @click="openPanel == 'platforms' ? openPanel = null : openPanel = 'platforms'">
-                    <img src="/media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'platforms' }">
+                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'platforms' }">
                     Für welche Plattformen soll das Spiel erscheinen?
                 </h4>
         
