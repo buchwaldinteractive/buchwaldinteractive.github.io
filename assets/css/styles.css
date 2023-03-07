@@ -579,15 +579,23 @@ button{
   margin-top: 1.5rem;
   padding-left: 1.5rem;
   cursor: pointer;
-  background-image: url('../../media/images/arrow.png');
-  background-repeat: no-repeat;
-  background-size: 1.5em;
+}
+
+#faq h4 img {
+  width: 1.2rem;
+  transition: transform .5s;
+  position: relative;
+  top: .25em;
 }
 
 #faq p {
   margin-top: 1rem;
   margin-bottom: 1rem;
   margin-left: 2rem;
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
 }
 
 /*=============== IMPRESSUM ===============*/
@@ -1167,6 +1175,14 @@ button{
     width: 180px;
     top: 30%;
     left: -3%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .section_special {
+    background:
+      radial-gradient(at top, rgba(30, 30, 30, 1), transparent),
+      linear-gradient(to top, rgba(30, 30, 30, 1), transparent);
   }
 }
 
