@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The First Explorers - a Build-Up strategy game. Join the community and watch this game grow.">
 
-    <link rel="alternate" hreflang="de" href="/de-de/">
+    <link rel="alternate" hreflang="de" href="../de-de/">
 
     <link rel="shortcut icon" href="media/images/TheFirstExplorers_Icon_withoutBG.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/boxicons.min.css">
@@ -34,7 +34,12 @@
                         <a href="#about" class="nav__link">About</a>
                     </li>
 
+                    <li class="nav__item">
+                        <a href="#faq" class="nav__link">FAQ</a>
+                    </li>
+
                     <a href="mailto:contact@the-first-explorers.com" class="button button--ghost">Contact</a>
+                    <a href="https://the-first-explorers.com/de-de/" class="button button--language">DE</a>
                 </ul>
 
                 <div class="nav__close" id="nav-close">
@@ -102,11 +107,266 @@
                 <img src="media/images/TheFirstExplorers_Logo_masked.png" alt="" class="about__img">
             </div>
         </section>
+        
+        <!--==================== FAQ ====================-->
+
+        <section class="section section_special" id="faq">
+            <div class="container faq__data" x-data="{ openPanel: null }">
+        
+                <h2>FAQ</h2>
+
+                <h3>Game & Lore</h3>
+
+                <h4 @click="openPanel == 'world_setting' ? openPanel = null : openPanel = 'world_setting'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'world_setting' }">
+                    In what kind of world is "The First Explorers" set?
+                </h4>
+
+                <p x-show="openPanel == 'world_setting'" x-transition:enter.duration.1500ms.origin.left>The game is set in the time of antiquity in Europe. The antiquity and late antiquity serve as a template for the
+                factions, the game world, artstyle and goods. However, historical accuracy is not a focus of the game.</p>
+
+                <h4 @click="openPanel == 'special' ? openPanel = null : openPanel = 'special'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'special' }">
+                    What is special about "The First Explorers"?
+                </h4>
+
+                <p x-show="openPanel == 'special'" x-transition:enter.duration.1500ms.origin.left>You'll experience an atmospheric, settler-like game that offers the perfect mix between building and real-time strategy.
+                Look forward to a bustling world with an aquarium effect, i.e. every good and every inhabitant is graphically
+                represented and you can follow every production step. Only by observing the game world will you be able to see where
+                your fortunes are needed.</p>
+
+                <h4 @click="openPanel == 'fantasy' ? openPanel = null : openPanel = 'fantasy'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'fantasy' }">
+                    Will there be fantasy elements?
+                </h4>
+
+                <p x-show="openPanel == 'fantasy'" x-transition:enter.duration.1500ms.origin.left>No, fantasy elements are not planned. There will be no fantasy peoples, wizards, werewolves or anything like that.</p>
+
+                <h4 @click="openPanel == 'factions' ? openPanel = null : openPanel = 'factions'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'factions' }">
+                    Will there be different factions?
+                </h4>
+
+                <p x-show="openPanel == 'factions'" x-transition:enter.duration.1500ms.origin.left>Currently, the development focus is on one faction. However, the lore definitely foresees several factions. How many
+                will make it into the game depends on further development progress.</p>
+
+                <h3>Gameflow</h3>
+
+                <h4 @click="openPanel == 'objective' ? openPanel = null : openPanel = 'objective'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'objective' }">
+                    What is the objective in the game?
+                </h4>
+
+                <p x-show="openPanel == 'objective'" x-transition:enter.duration.1500ms.origin.left>You will land with your ship and your crew on an island and have to build a thriving settlement from scratch using the
+                available resources on the map. To successfully complete your game, you must defeat all opponents on the map.</p>
+
+                <h4 @click="openPanel == 'victory_condition' ? openPanel = null : openPanel = 'victory_condition'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'victory_condition' }">
+                    What will be the victory conditions?
+                </h4>
+
+                <p x-show="openPanel == 'victory_condition'" x-transition:enter.duration.1500ms.origin.left>Victory by military success is firmly planned. However, there will also be other victory variants, which depend on the
+                map or game mode. Friends of peaceful victories should not miss out. There are plans for victory through economic
+                success or through the construction of special building projects.</p>
+
+                <h4 @click="openPanel == 'game_duration' ? openPanel = null : openPanel = 'game_duration'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'game_duration' }">
+                    How long will a game last?
+                </h4>
+
+                <p x-show="openPanel == 'game_duration'" x-transition:enter.duration.1500ms.origin.left>A game can last between 1.5 hours and 4-5 hours and depends on how the players play. The game mechanics offer a lot of
+                flexibility here.</p>
+
+                <h4 @click="openPanel == 'game_modes' ? openPanel = null : openPanel = 'game_modes'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'game_modes' }">
+                    What game modes are planned?
+                </h4>
+
+                <p x-show="openPanel == 'game_modes'" x-transition:enter.duration.1500ms.origin.left>Currently, the focus is on skirmish against the AI and human opponents, i.e. PvE and PvP. There is also a story campaign
+                planned, but that depends somewhat on the development process.</p>
+
+                <h3>Gameplay</h3>
+
+                <h4 @click="openPanel == 'building' ? openPanel = null : openPanel = 'building'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'building' }">
+                    How will building work?
+                </h4>
+
+                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Buildings and roads can be placed on a granular hex grid within your territory.
+                The granular grid is the perfect size to awaken the puzzle urge in you, but still makes building an organic settlement
+                possible.</p>
+                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>You'll find yourself trying to squeeze out every last bit of open space in your settlement!
+                There will also be hilly terrain that will increase the construction time of your buildings, so the properly chosen
+                building site is golden.</p>
+
+                <h4 @click="openPanel == 'civilian' ? openPanel = null : openPanel = 'civilian'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'civilian' }">
+                    Can civilian buildings or civilian settlers be attacked?
+                </h4>
+
+                <p x-show="openPanel == 'civilian'" x-transition:enter.duration.1500ms.origin.left>No, civilian buildings or civilian settlers cannot be attacked by any unit. Only military buildings like watchtowers can
+                be captured.</p>
+
+                <h4 @click="openPanel == 'civilian_flee' ? openPanel = null : openPanel = 'civilian_flee'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'civilian_flee' }">
+                    Do civilian settlers flee from enemy units?
+                </h4>
+
+                <p x-show="openPanel == 'civilian_flee'" x-transition:enter.duration.1500ms.origin.left>No, civilian settlers will continue to transport goods and will not flee.</p>
+
+                <h4 @click="openPanel == 'direct_unit_control' ? openPanel = null : openPanel = 'direct_unit_control'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'direct_unit_control' }">
+                    Is there a direct unit control?
+                </h4>
+
+                <p x-show="openPanel == 'direct_unit_control'" x-transition:enter.duration.1500ms.origin.left>Civilian residents such as carriers or construction workers are indirectly controlled by your construction orders and
+                production tasks.</p>
+                <p x-show="openPanel == 'direct_unit_control'" x-transition:enter.duration.1500ms.origin.left>Soldiers, geologists, etc. are controlled directly. Look forward to raising huge armies and commanding them in battle!</p>
+
+                <h4 @click="openPanel == 'territory_expansion' ? openPanel = null : openPanel = 'territory_expansion'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'territory_expansion' }">
+                    How do I expand my territory?
+                </h4>
+
+                <p x-show="openPanel == 'territory_expansion'" x-transition:enter.duration.1500ms.origin.left>The territory is delimited with border stones. The border can be expanded by placing military buildings like
+                watchtowers.</p>
+
+                <h4 @click="openPanel == 'settlement_upgrades' ? openPanel = null : openPanel = 'settlement_upgrades'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'settlement_upgrades' }">
+                    Will there be settlement upgrades?
+                </h4>
+
+                <p x-show="openPanel == 'settlement_upgrades'" x-transition:enter.duration.1500ms.origin.left>Yes, by building special landmarks the settlement will level up and unlock new buildings and units in the game. The
+                settlement will start at the hamlet level. Currently, 4 settlement levels are planned: the hamlet, village, small town
+                and town levels.</p>
+
+                <h4 @click="openPanel == 'mines' ? openPanel = null : openPanel = 'mines'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'mines' }">
+                    Will there be mines and mining?
+                </h4>
+
+                <p x-show="openPanel == 'mines'" x-transition:enter.duration.1500ms.origin.left>Yes, there will be real mountains where you can build mines.</p>
+
+                <h4 @click="openPanel == 'food_system' ? openPanel = null : openPanel = 'food_system'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'food_system' }">
+                    How does the food system work?
+                </h4>
+
+                <p x-show="openPanel == 'food_system'" x-transition:enter.duration.1500ms.origin.left>Miners work only when they get their basic food.</p>
+                <p x-show="openPanel == 'food_system'" x-transition:enter.duration.1500ms.origin.left>Production buildings basically work without meals. However, production efficiency can be massively increased with meals.
+                Meals are prepared in residential buildings by cooks. The cooks get the food from market stalls. The higher the
+                settlement level, the higher quality meals are possible.</p>
+
+                <h4 @click="openPanel == 'inhabitant_recrution' ? openPanel = null : openPanel = 'inhabitant_recrution'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'inhabitant_recrution' }">
+                    How to get new inhabitants?
+                </h4>
+
+                <p x-show="openPanel == 'inhabitant_recrution'" x-transition:enter.duration.1500ms.origin.left>Currently, it is planned to recruit them via a port. The inhabitants will then come by ship from the homeland.</p>
+
+                <h4 @click="openPanel == 'walls' ? openPanel = null : openPanel = 'walls'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'walls' }">
+                    Will there be walls?
+                </h4>
+
+                <p x-show="openPanel == 'walls'" x-transition:enter.duration.1500ms.origin.left>Yes, wooden palisades and stone walls are planned.</p>
+
+                <h4 @click="openPanel == 'soldiers_on_towers' ? openPanel = null : openPanel = 'soldiers_on_towers'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'soldiers_on_towers' }">
+                    Can soldiers be positioned on towers and stone walls?
+                </h4>
+
+                <p x-show="openPanel == 'soldiers_on_towers'" x-transition:enter.duration.1500ms.origin.left>Absolutely.</p>
+
+                <h4 @click="openPanel == 'combat_power' ? openPanel = null : openPanel = 'combat_power'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'combat_power' }">
+                    Will there be a combat power system?
+                </h4>
+
+                <p x-show="openPanel == 'combat_power'" x-transition:enter.duration.1500ms.origin.left>Definitely, especially at the beginning of a game the soldiers on their home territory will have a massive combat power
+                bonus over opponents. This effectively prevents rush tactics. In the course of a game you will be able to influence the
+                combat power.</p>
+                
+                <h3>Community</h3>
+
+                <h4 @click="openPanel == 'mod_support' ? openPanel = null : openPanel = 'mod_support'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'mod_support' }">
+                    Is mod support planned?
+                </h4>
+
+                <p x-show="openPanel == 'mod_support'" x-transition:enter.duration.1500ms.origin.left>Yes!</p>
+                <p x-show="openPanel == 'mod_support'" x-transition:enter.duration.1500ms.origin.left>Modsupport is planned.</p>
+                <p x-show="openPanel == 'mod_support'" x-transition:enter.duration.1500ms.origin.left>How extensive this will be, will be decided in the further development. Mods should be able to be searched, installed
+                and activated directly in the game as plugins. Self-created maps should be possible.</p>
+
+                <h4 @click="openPanel == 'community_interaction' ? openPanel = null : openPanel = 'community_interaction'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'community_interaction' }">
+                    Will there be interaction with the community?
+                </h4>
+
+                <p x-show="openPanel == 'community_interaction'" x-transition:enter.duration.1500ms.origin.left>Absolutely. The developer is looking forward to a lively exchange on the official Discord server.
+                There, development progress will be shared and discussed with the community at regular inlefttervals.
+                I'm looking forward to your ideas and feedback!</p>
+                
+                <h3>Behind The Scenes</h3>
+
+                <h4 @click="openPanel == 'stage_of_development' ? openPanel = null : openPanel = 'stage_of_development'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'stage_of_development' }">
+                    What stage of development is the game currently in?
+                </h4>
+
+                <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Currently, the development is in the prototype phase. The game mechanics are being tested and iterated.</p>
+                <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Once the prototype phase is successfully completed, a Steam page will be created for the game and it will move to the next development phase.</p>
+
+                <h4 @click="openPanel == 'roadmap' ? openPanel = null : openPanel = 'roadmap'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'roadmap' }">
+                    Is there some kind of roadmap?
+                </h4>
+
+                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Yes, there is a plan <strong><a href="https://trello.com/b/YmKKXdrP/the-first-explorers-barebone-prototype-build-roadmap">here </a></strong> for the current development phase.</p>
+                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>However, this only serves as an orientation for the community and is not as detailed as the internal plan.</p>
+
+                <h4 @click="openPanel == 'engine' ? openPanel = null : openPanel = 'engine'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'engine' }">
+                    Which engine is used to develop the game?
+                </h4>
+
+                <p x-show="openPanel == 'engine'" x-transition:enter.duration.1500ms.origin.left><strong>Unreal Engine 5</strong> is used for development.</p>
+
+                <h4 @click="openPanel == 'procedural_maps' ? openPanel = null : openPanel = 'procedural_maps'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'procedural_maps' }">
+                    Will there be handcrafted or procedural maps?
+                </h4>
+
+                <p x-show="openPanel == 'procedural_maps'" x-transition:enter.duration.1500ms.origin.left>Currently, the focus is on creating hand-crafted maps for the time being. However, since the beginning of the
+                development, it has been ensured that the use of procedural elements is possible for later. So procedural maps are
+                definitely in the realm of possibility.</p>
+
+                <h4 @click="openPanel == 'who' ? openPanel = null : openPanel = 'who'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'who' }">
+                    Who is behind "The First Explorers"?
+                </h4>
+
+                <p x-show="openPanel == 'who'" x-transition:enter.duration.1500ms.origin.left>The project is a one-man-project by Buchwald.Interactive. Behind the nickname is Sebastian, who lives in Germany and
+                develops the project in his spare time.</p>
+                
+                <h4 @click="openPanel == 'platforms' ? openPanel = null : openPanel = 'platforms'">
+                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'platforms' }">
+                    For which platforms will the game be released?
+                </h4>
+
+                <p x-show="openPanel == 'platforms'" x-transition:enter.duration.1500ms.origin.left>Currently a release for Windows is planned. Other platforms may be added in the course of development.</p>
+
+            </div>
+        </section>
+
     </main>
+
+
+
 
     <!--==================== FOOTER ====================-->
     <footer class="footer section">
-        <a href="https://the-first-explorers.com/de-de/" class="button button--language">DE</a>
         <span class="footer__copy">&#169; Buchwald Interactive. All rights reserved.</span>
         <a href="impressum/impressum.html" class="footer__impressum">Impressum</a>
     </footer>
@@ -115,12 +375,15 @@
     <a href="#" class="scrollup" id="scroll-up">
         <img src="media/images/wheel.png">
     </a>
+
+    <!--=============== ALPINE JS ===============-->
+    <script defer src="assets/js/alpine.js"></script>
     
     <!--=============== SCROLL REVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
     
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
