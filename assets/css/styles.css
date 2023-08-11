@@ -439,6 +439,12 @@ button{
   margin-bottom: 2rem;
 }
 
+.home__buttons_center{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
 /* Swiper Class */
 .swiper-pagination{
   position: initial;
@@ -928,6 +934,7 @@ button{
   .home__img{
     height: 200px;
   }
+
   .home__buttons{
     flex-direction: column;
     width: max-content;
@@ -965,6 +972,13 @@ button{
   .home__description{
     margin-bottom: var(--mb-1-5);
     text-align: center;
+  }
+
+  .home__buttons_center{
+    flex-direction: column;
+    width: fit-content;
+    row-gap: 1rem;
+    padding: 0 4rem 0;
   }
 }
 
