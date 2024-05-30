@@ -570,6 +570,16 @@ button{
   animation: floating 5s ease-in-out infinite;
 }
 
+/*=============== TRAILER ===============*/
+#trailer h2{
+  font-size: var(--h1-font-size);
+}
+#trailer h3{
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
 /*=============== FAQ ===============*/
 
 #faq h2 {
