@@ -233,9 +233,7 @@
                     How will building work?
                 </h4>
 
-                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Buildings and roads can be placed on a granular hex grid within your territory.
-                The granular grid is the perfect size to awaken the puzzle urge in you, but still makes building an organic settlement
-                possible.</p>
+                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Buildings and roads can be placed freely without a grid. Move and rotate the building until you found the perfect spot.</p>
                 <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>You'll find yourself trying to squeeze out every last bit of open space in your settlement!
                 There will also be hilly terrain that will increase the construction time of your buildings, so the properly chosen
                 building site is golden.</p>
@@ -357,15 +355,7 @@
 
                 <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Currently, the development is in the prototype phase. The game mechanics are being tested and iterated.</p>
                 <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Once the prototype phase is successfully completed, a Steam page will be created for the game and it will move to the next development phase.</p>
-
-                <h4 @click="openPanel == 'roadmap' ? openPanel = null : openPanel = 'roadmap'">
-                    <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'roadmap' }">
-                    Is there some kind of roadmap?
-                </h4>
-
-                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Yes, there is a plan <strong><a href="https://trello.com/b/YmKKXdrP/the-first-explorers-barebone-prototype-build-roadmap">here </a></strong> for the current development phase.</p>
-                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>However, this only serves as an orientation for the community and is not as detailed as the internal plan.</p>
-
+                
                 <h4 @click="openPanel == 'engine' ? openPanel = null : openPanel = 'engine'">
                     <img src="media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'engine' }">
                     Which engine is used to develop the game?
@@ -387,7 +377,7 @@
                     Who is behind "The First Explorers"?
                 </h4>
 
-                <p x-show="openPanel == 'who'" x-transition:enter.duration.1500ms.origin.left>The project is a one-man-project by Buchwald.Interactive. Behind the nickname is Sebastian, who lives in Germany and
+                <p x-show="openPanel == 'who'" x-transition:enter.duration.1500ms.origin.left>The project is a one-man-project by Buchwald Interactive. Behind the nickname is Sebastian, who lives in Germany and
                 develops the project in his spare time.</p>
 
                 <h4 @click="openPanel == 'platforms' ? openPanel = null : openPanel = 'platforms'">
