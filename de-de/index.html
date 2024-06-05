@@ -236,9 +236,7 @@
                     Wie wird das Bauen funktionieren?
                 </h4>
         
-                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Gebäude und Straßen werden auf einem granularen Hex-Grid innerhalb deines Territoriums platziert werden können.
-                Das granulare Grid hat die perfekte Größe, um den Puzzle Drang in dir zu wecken, macht aber trotzdem das Bauen einer
-                organischen Siedlung möglich.
+                <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Gebäude und Straßen können frei und ohne Grid platziert werden. Bewege und rotiere das Gebäude bis du den perfekten Platz gefunden hast.
                 </p>
                 <p x-show="openPanel == 'building'" x-transition:enter.duration.1500ms.origin.left>Du wirst dich dabei erwischen, wie du versuchst, noch den letzten Freiraum in deiner Siedlung herauszuholen!
                 Es wird außerdem auch hügeliges Terrain geben, welches die Bauzeit deiner Gebäude verlängert, weshalb der richtig
@@ -370,15 +368,7 @@
 
                 <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Aktuell befindet sich die Entwicklung in der Prototypenphase. Die Spielmechaniken werden von Grund auf getestet und iteriert.</p>
                 <p x-show="openPanel == 'stage_of_development'" x-transition:enter.duration.1500ms.origin.left>Sobald die Prototypenphase erfolgreich abgeschlossen ist, wird eine Steamseite für das Spiel erstellt und es geht in die nächste Entwicklungsphase.</p>
-
-                <h4 @click="openPanel == 'roadmap' ? openPanel = null : openPanel = 'roadmap'">
-                    <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'roadmap' }">
-                    Gibt es eine Art Roadmap?
-                </h4>
-
-                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Ja, für die aktuelle Entwicklungsphase gibt es <strong><a href="https://trello.com/b/YmKKXdrP/the-first-explorers-barebone-prototype-build-roadmap">hier </a></strong> einen Plan.</p>
-                <p x-show="openPanel == 'roadmap'" x-transition:enter.duration.1500ms.origin.left>Dieser dient aber nur als Orientierung für die Community und ist nicht so detailliert wie der interne Plan.</p>
-
+                
                 <h4 @click="openPanel == 'engine' ? openPanel = null : openPanel = 'engine'">
                     <img src="../media/images/arrow.png" alt="" x-bind:class="{ 'rotate-90': openPanel == 'engine' }">
                     Mit welcher Engine wird das Spiel entwickelt?
@@ -400,7 +390,7 @@
                     Wer steckt hinter “The First Explorers”?
                 </h4>
         
-                <p x-show="openPanel == 'who'" x-transition:enter.duration.1500ms.origin.left>Das Projekt ist ein Ein-Mann-Projekt von Buchwald.Interactive. Hinter dem Nickname steckt Sebastian, der in Deutschland
+                <p x-show="openPanel == 'who'" x-transition:enter.duration.1500ms.origin.left>Das Projekt ist ein Ein-Mann-Projekt von Buchwald Interactive. Hinter dem Nickname steckt Sebastian, der in Deutschland
                 lebt und das Projekt in seiner Freizeit entwickelt.</p>
         
                 <h4 @click="openPanel == 'platforms' ? openPanel = null : openPanel = 'platforms'">
